@@ -1,0 +1,130 @@
+.navbar {
+    background-color: #000032;
+    position: sticky;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar--items {
+    display: flex;
+    margin-right: 7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    
+}
+
+.navbar--items li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.navbar--items li a {
+    color: white;
+}
+
+.navbar--items a {
+    text-decoration: none;
+}
+
+.logo--name {
+    margin-left: 7rem;
+    font-size: 1.7rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.logo--name a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.mobile--trigger {
+    display: none;
+}
+
+.navbar--items li a:hover {
+    transform: scale(1.10);
+    color: #b000e6;
+    transition: ease-in 0.1s;
+    transform: translate(2px,1px);
+}
+
+.logo--name:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+
+@media  screen and (max-width: 775px) {
+    .navbar--items {
+        display: none;
+    }
+
+    .navbar--items.is--open {
+        display:flex;
+        flex-direction: column;
+        margin-left: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .navbar.is--open {
+        height: 40vh;
+       flex-direction: column;
+       align-items: start;
+       position: relative;
+    }
+
+    .logo--name.is--open {
+        margin-top: 1.3rem;
+    }
+
+
+    .mobile--trigger {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 0;
+        right: 0;
+        margin-right: 7rem;
+        margin-top: 1.7rem;
+    }
+}
+
+@media  screen and (max-width: 775px) {
+
+    .logo--name {
+        margin-right: 1rem;
+    
+    }
+
+    
+}
+
+@media  screen and (max-width: 400px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .mobile--trigger {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

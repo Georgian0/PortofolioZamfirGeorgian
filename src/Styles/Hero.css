@@ -1,0 +1,149 @@
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -50px;
+    z-index: -2;
+}
+
+.hero--bg {
+    background-image: url(../assets/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main--img {
+    width: 22rem;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+
+
+.main--text {
+    
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main--text h1 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+
+}
+
+.main--text h3 {
+    color: rgb(186, 186, 186);
+    margin-bottom: 2rem;
+    
+}
+
+.main--text button {
+    margin-top: 5rem;
+    padding: 0.7rem 1.3rem;
+    border: 0px;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #b000e6, #006eff);
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.main--text button:hover {
+    color: black;
+    transition: 0.3s ease;
+    
+    box-shadow: 5px 5px 10px black;
+}
+
+.main--text--junior--frontend {
+    font-size: 72px;
+    background: -webkit-linear-gradient(45deg ,#b000e6, #006eff);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+
+.main--text button:hover {
+    cursor: pointer;
+}
+
+.main--text--developer {
+    color: white;
+    font-size: 65px
+}
+
+
+@media screen and (max-width: 1330px) {
+    .main--text {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .hero {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main--text {
+        justify-self: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        width: 100%;
+    
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .main--img {
+        width: 250px;
+    
+    }
+
+    .main--text--junior--frontend {
+        font-size: 40px;
+    }
+
+    .main--text--developer {
+        font-size: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero--bg {
+       background-size: cover;
+    
+    }
+
+}
+
+@keyframes fade-out {
+    to {opacity: 0;}
+}
+
+@keyframes header-image-animation {
+    25% {opacity: 1;}
+    85%, 100% {opacity: 0; scale: 1.2;}
+}

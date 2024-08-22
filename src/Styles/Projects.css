@@ -1,0 +1,130 @@
+.projects h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.projects {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.project--1 {
+    border: 1px solid black;
+    margin: 4rem 0rem 4rem 8rem;
+    display: flex;
+    padding: 3rem 3rem;
+    border-radius: 10px;
+    background-color: #141414;
+    color: white;
+    animation: go-in linear forwards;
+    animation-timeline: view();
+    animation-range: 150px 300px;
+    box-shadow: 10px 7px 8px gray;
+}
+
+.project--1--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 6rem;
+}
+
+.project--1--text h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.project--1--text p {
+    font-size: 15px;
+    color: white;
+}
+
+.project--1--text button {
+    padding: 8px 20px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+.project--1--text button a {
+    text-decoration: none;
+    color: black
+}
+
+.project--1--text button:hover {
+    cursor: pointer;
+}
+
+.project--1 img {
+   object-fit: contain;
+}
+
+@keyframes go-in {
+    to {margin:4rem 4rem 4rem 4rem;}
+}
+
+@media screen and (max-width: 1200px) {
+    .project--1 {
+        flex-direction: column;
+    }
+
+   .project--1 img {
+        align-self: center;
+        outline-offset: 10px;
+        object-fit: contain;
+   }
+    
+
+   .project--1--text {
+    padding-left: 0;
+    padding-top: 2rem;
+   
+   }
+
+   .project--1--text h2 {
+    margin: auto;
+    padding-bottom: 2rem;
+   }
+
+   .project--1--text button {
+    margin: auto;
+   }
+
+   .project--1--text p {
+    margin-bottom: 2rem;
+    align-self: center;
+   }
+}
+
+.working h2 {
+    margin-left: 5rem;
+    background-color: #141414;
+    color: white;
+    width: fit-content;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .project--1 img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project--1 img {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .project--1 {
+        animation: none;
+        margin: 4rem 0rem 3rem 0rem
+    }
+}

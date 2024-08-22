@@ -1,0 +1,107 @@
+.About--section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    border-bottom: 2px solid #141414;
+}
+
+
+.about--everything {
+    background-color: #000032;
+    color: white;
+    width: 60%;
+    box-shadow: 15px 15px 12px #4e4e4e;
+}
+
+
+.about--text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid white;
+    
+}
+
+.about--title {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    border-width: 3px;
+    padding-top: 2rem;
+}
+
+.about--p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2rem;
+    color: black;
+    border-radius: 10px;
+    margin-top: 4rem;
+   /* animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 150px 300px; */
+    text-align: start;
+    background-color: white;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.title--span {
+    color: white;
+}
+
+.scroller {
+    max-width: 600px;
+    margin: auto;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+    mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller--inner {
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: scroll 100s linear infinite;
+}
+
+.scroller--inner {
+    display: flex;
+    margin: 4rem 7rem 4rem 7rem;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.scroller--inner li a img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.scroller--inner li {
+    list-style: none;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 1rem));
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about--everything {
+        width: 90%;
+    }
+}
